@@ -1,0 +1,65 @@
+#navbar-section {
+    height: 10vh;
+    background-color: #303030;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar {
+    padding: 0 0.5rem;
+    background: #303030;
+    color: white;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 3vh;
+    transition: top 250ms ease-in-out;
+    z-index: 10;
+}
+
+.navbar .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 7vh;
+    aspect-ratio: 1 / 1;
+}
+
+.navbar .logo h1 {
+    font-size: 4vh;
+    font-weight: 400;
+}
+
+.navbar .links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .links li:last-child a {
+    background: green;
+    padding: 0.4em;
+    border-radius: 0.5em;
+    color: white;
+    transition: all 150ms ease-in-out;
+}
+
+.navbar .links li:last-child a:hover,
+.navbar .links li:last-child a:focus {
+    background: limegreen;
+    color: black;
+}
+
+.navbar .settings {
+    padding-right: 1vw;
+}
+
+.settings i {
+    color: white;
+}

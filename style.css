@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    overflow-y: overlay;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 9999rem;
+    padding: 1rem;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+li {
+    font-size: 0.8rem;
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 150ms ease-in-out;
+}
+
+.links a:hover,
+.links a:focus {
+    color: #c0c0c0;
+}
